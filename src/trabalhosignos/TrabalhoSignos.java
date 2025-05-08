@@ -18,12 +18,12 @@ public class TrabalhoSignos {
         sorte = 1 + (int) (Math.random() * 999);
         corN = 1 + (int) (Math.random() * 10);
         String signo, cor = null;
-// decidi usar uma váriavel para o numero da sorte para reduzir bytes
+// decidi usar uma váriavel para o numero da sorte para reduzir
         //definição de váriaveis
         System.out.println("Informe seu nome: ");
         nome = ler.nextLine();
         if (nome.length() > 25 || nome.length() < 8) {
-            System.out.println("Nome inválido, minimo 8 letras e maximo 25 letras");
+            System.out.println("Nome inválido, minimo 8 letras e máximo 25 letras");
             return;
         }
         System.out.println("Informe seu sexo 1 para feminino, 2 para masculino ou 3 para outros");
@@ -73,7 +73,7 @@ frustar o usuário, ja lhe informa do seu erro logo de cara, acredito que ficou
  okay? deve ter alguma forma de fazer tudo em um ifzão e informa o erro que
 cometeu? deve existir, mas não possuo tal conhecimento :/ */
         idade = anoA - ano;
-        if (mes > mesA || (mes == mesA && diaA > dia)) {
+        if (mes > mesA || (mes == mesA && diaA < dia)) {
             idade--;
         }
 
