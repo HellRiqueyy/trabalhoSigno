@@ -22,8 +22,8 @@ public class TrabalhoSignos {
         //definição de váriaveis
         System.out.println("Informe seu nome: ");
         nome = ler.nextLine();
-        if (nome.length() > 25 || nome.length() < 8) {
-            System.out.println("Nome inválido, minimo 8 letras e máximo 25 letras");
+        if (nome.length() < 8) {
+            System.out.println("Nome inválido, minimo 8 letras.");
             return;
         }
         System.out.println("Informe seu sexo 1 para feminino, 2 para masculino ou 3 para outros");
@@ -56,7 +56,6 @@ public class TrabalhoSignos {
         if (ano < 1900 || ano > anoA) {
             System.out.println("Ano informado inválido");
             return;
-            // novamente piadinha que se perdeu ;-;
         } else if (mes == 2 && dia == 29) {
             if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0)) {
             } else {
@@ -105,34 +104,34 @@ cometeu? deve existir, mas não possuo tal conhecimento :/ */
 
         switch (corN) {
             case 1:
-                cor = "Azul";
+                cor = "Azul!";
                 break;
             case 2:
-                cor = "Vermelho";
+                cor = "Vermelho!";
                 break;
             case 3:
-                cor = "Branco";
+                cor = "Branco!";
                 break;
             case 4:
-                cor = "Preto";
+                cor = "Preto!";
                 break;
             case 5:
-                cor = "Amarelo";
+                cor = "Amarelo!";
                 break;
             case 6:
-                cor = "Verde";
+                cor = "Verde!";
                 break;
             case 7:
-                cor = "Marrom";
+                cor = "Marrom!";
                 break;
             case 8:
-                cor = "Violeta";
+                cor = "Violeta!";
                 break;
             case 9:
-                cor = "Rosa";
+                cor = "Rosa!";
                 break;
             case 10:
-                cor = "Cinza";
+                cor = "Cinza!";
                 break;
             default:
 
@@ -141,9 +140,9 @@ cometeu? deve existir, mas não possuo tal conhecimento :/ */
         //processamento de dados
 
         if (sexo == 1) {
-            System.out.println("Sra. " + nome + " nascida em " + dia + "/" + mes + "/" + ano + ", é do signo " + signo + ". Você tem " + idade + " anos. Seu numero da sorte é " + sorte + ". E sua cor é " + cor);
+            System.out.println("Sra. " + nome + " nascida em " + dia + "/" + mes + "/" + ano + ", é do signo " + signo + ". Você tem " + idade + " anos. Seu numero da sorte é " + sorte + ". E sua cor da sorte é " + cor);
         } else {
-            System.out.println("Sr. " + nome + " nascido em " + dia + "/" + mes + "/" + ano + ", é do signo " + signo + ". Você tem " + idade + " anos. Seu numero da sorte é " + sorte + ". E sua cor é " + cor);
+            System.out.println("Sr. " + nome + " nascido em " + dia + "/" + mes + "/" + ano + ", é do signo " + signo + ". Você tem " + idade + " anos. Seu numero da sorte é " + sorte + ". E sua cor da sorte é " + cor);
         }
 //saída de dados
 //pensei em utilizar Math.random direto na saída de dados, só faria peso
